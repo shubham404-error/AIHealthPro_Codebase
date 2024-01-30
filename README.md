@@ -1,7 +1,5 @@
 # Multiple Disease Prediction Web App
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 *A web application for predicting multiple diseases using machine learning models. This project includes prediction models for diabetes, Parkinson's disease, heart disease, and breast cancer.*
 
 ## Table of Contents
@@ -25,13 +23,13 @@ The diseases currently supported by this web app include:
 
 ## Web App
 
-- [Access the Web App](https://multiple-disease-prediction-using-ml.streamlit.app/) - Use the web app to predict multiple diseases.
+- [Access the Web App](https://nexus-info-internship-task3.streamlit.app/) - Use the web app to predict multiple diseases.
 
 ## Installation
 
 1. Clone the repository:
 <pre>
-git clone https://github.com/AryanKaushal2002/Multiple-Disease-Prediction-Model-Deployment-using-StreamLit.git
+git clone https://github.com/shubham404-error/Nexus-Info_Internship_Task-3.git
 </pre>
 
 
@@ -73,7 +71,7 @@ The machine learning models used in this web app are trained on publicly availab
 
 ## License
 
-*This project is licensed under the [MIT License](LICENSE).*
+*This project is licensed under the [GNU](LICENSE).*
 
 ---
 
