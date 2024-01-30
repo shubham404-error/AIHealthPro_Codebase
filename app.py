@@ -375,7 +375,7 @@ text-align: center;
 }
 </style>
 <div class="footer">
-<p>Made with love by Shubham Tejani &copy; 2024</p>
+<p>Made with love❤️ by Shubham Tejani &copy; 2024</p>
 </div>
 """
 st.markdown(footer,unsafe_allow_html=True)
