@@ -350,7 +350,35 @@ if selected == 'Breast Cancer Prediction':
                 cancer_diagnosis = 'The person is not diagnosed with breast cancer.'
         
     st.success(cancer_diagnosis)
+# Add a footer to the app
+footer="""<style>
+a:link , a:visited{
+color: white;
+background-color: transparent;
+text-decoration: underline;
+}
 
+a:hover,  a:active {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #f5f5f5;
+color: #444;
+text-align: center;
+}
+</style>
+<div class="footer">
+<p>Made with love by Shubham Tejani &copy; 2024</p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
 
     
 
