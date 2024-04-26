@@ -11,7 +11,7 @@ diabetes_model = pickle.load(open("./models/diabetes_model_new.sav",'rb'))
 heart_model = pickle.load(open("./models/heart_disease_model.sav",'rb'))
 parkinsons_model = pickle.load(open("./models/parkinsons_model.sav",'rb'))
 breast_model = pickle.load(open("./models/breast_cancer_model.sav",'rb'))
-kidney_disease_model = pickle.load(open(f'./models/kidney.pkl','rb'))
+kidney_disease_model = pickle.load(open('./models/kidney.pkl','rb'))
 
 
 # sidebar navigation
