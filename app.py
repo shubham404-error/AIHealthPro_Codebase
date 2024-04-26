@@ -458,6 +458,45 @@ if selected == 'Kidney Disease Prediction':
 if selected == 'Liver Disease Prediction':
     
     st.title("Liver Disease Prediction using ML")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        Age = st.number_input('Age', min_value=1, max_value=120)
+        Total_Bilirubin = st.number_input('Total Bilirubin', min_value=0.0)
+        Alkaline_Phosphotase = st.number_input('Alkaline Phosphotase', min_value=0.0)
+        Total_Protiens = st.number_input('Total Protiens', min_value=0.0)
+        Albumin_and_Globulin_Ratio = st.number_input('Albumin and Globulin Ratio', min_value=0.0)
+
+    with col2:
+        Gender = st.selectbox('Gender', ['Male', 'Female'])
+        Direct_Bilirubin = st.number_input('Direct Bilirubin', min_value=0.0)
+        Alamine_Aminotransferase = st.number_input('Alamine Aminotransferase', min_value=0.0)
+        Albumin = st.number_input('Albumin', min_value=0.0)
+
+    with col3:
+        Aspartate_Aminotransferase = st.number_input('Aspartate Aminotransferase', min_value=0.0)
+
+    # Preprocess Gender
+    Gender = 1 if Gender == 'Male' else 0
+
+    # Code for Prediction
+    liver_diagnosis = ''
+
+    if st.button("Liver Disease Test Result"):
+        if not all([Age, Gender, Total_Bilirubin, Direct_Bilirubin, Alkaline_Phosphotase, Alamine_Aminotransferase,
+                    Aspartate_Aminotransferase, Total_Protiens, Albumin, Albumin_and_Globulin_Ratio]):
+            st.warning("Please fill in all the fields.")
+        else:
+            liver_prediction = liver_model.predict([[Age, Gender, Total_Bilirubin, Direct_Bilirubin, Alkaline_Phosphotase,
+                                                    Alamine_Aminotransferase, Aspartate_Aminotransferase, Total_Protiens,
+                                                    Albumin, Albumin_and_Globulin_Ratio]])
+
+            if liver_prediction[0] == 1:
+                liver_diagnosis = 'The person is diagnosed with liver disease.'
+            else:
+                liver_diagnosis = 'The person is not diagnosed with liver disease.'
+
+    st.success(liver_diagnosis)
 # Add a footer to the app
 footer="""<style>
 a:link , a:visited{
