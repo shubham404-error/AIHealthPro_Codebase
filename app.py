@@ -2,7 +2,7 @@
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu 
-st.set_page_config(page_title="DiagnosAI - AIHEALTHPRO", page_icon="⚕️",layout="centered")
+st.set_page_config(page_title="DiagnosAI - AIHEALTHPRO", page_icon=":pill:",layout="centered")
 st.image("logo.png",width=100)
 
 # loading the saved models
