@@ -12,7 +12,7 @@ heart_model = pickle.load(open("./models/heart_disease_model.sav",'rb'))
 parkinsons_model = pickle.load(open("./models/parkinsons_model.sav",'rb'))
 breast_model = pickle.load(open("./models/breast_cancer_model.sav",'rb'))
 kidney_disease_model = pickle.load(open('./models/kidney.pkl','rb'))
-
+liver_model = pickle.load(open('./models/liver.pkl','rb'))
 
 # sidebar navigation
 with st.sidebar:
@@ -21,7 +21,7 @@ with st.sidebar:
                            ['Heart Disease Prediction',
                             'Diabetes Prediction',
                             'Parkinson\'s Prediction',
-                            'Breast Cancer Prediction','Kidney Disease Prediction'],
+                            'Breast Cancer Prediction','Kidney Disease Prediction','Liver Disease Prediction'],
                            menu_icon='hospital-fill',
                            icons=['heart','activity','brain','gender-female','person'],
                            default_index=0)
@@ -455,6 +455,9 @@ if selected == 'Kidney Disease Prediction':
         else:
             kindey_diagnosis = "The person does not have Kidney's disease"
     st.success(kindey_diagnosis)
+if selected == 'Liver Disease Prediction':
+    
+    st.title("Liver Disease Prediction using ML")
 # Add a footer to the app
 footer="""<style>
 a:link , a:visited{
