@@ -355,7 +355,7 @@ if selected == 'Breast Cancer Prediction':
         
     st.success(cancer_diagnosis)
     
-    if selected == 'Kidney Disease Prediction':
+if selected == 'Kidney Disease Prediction':
     
     st.title("Kidney Disease Prediction using ML")
 
