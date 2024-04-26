@@ -450,7 +450,7 @@ if selected == 'Kidney Disease Prediction':
 
         prediction = kidney_disease_model.predict([user_input])
 
-        if prediction[0] == 1:
+        if prediction[0] == 0:
             kindey_diagnosis = "The person has Kidney's disease"
         else:
             kindey_diagnosis = "The person does not have Kidney's disease"
