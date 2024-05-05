@@ -1,4 +1,4 @@
-# Multiple Disease Prediction Web App
+# DiagnosAI🧑‍⚕️-Multiple Disease Prediction Web App💊
 
 *A web application for predicting multiple diseases using machine learning models. This project includes prediction models for diabetes, Parkinson's disease, heart disease, and breast cancer.*
 
@@ -20,10 +20,12 @@ The diseases currently supported by this web app include:
 - Parkinson's disease
 - Heart disease
 - Breast cancer
+- Kidney disease
+- Liver disease
 
 ## Web App
 
-- [Access the Web App](https://nexus-info-internship-task3.streamlit.app/) - Use the web app to predict multiple diseases.
+- [Access the Web App](https://diagnosai-aihealthpro.streamlit.app/) - Use the web app to predict multiple diseases.
 
 ## Installation
 
@@ -64,6 +66,10 @@ The machine learning models used in this web app are trained on publicly availab
 - Heart Disease Model: This model predicts the presence of heart disease based on various clinical and demographic features of a person.
 
 - Breast Cancer Model: This model predicts whether a breast mass is malignant or benign using features derived from breast cytology.
+
+- Kidney Disease Model: This model predicts the likelihood of a person having chronic kidney disease based on features such as age, blood pressure, specific gravity, albumin, and other relevant clinical measurements.
+
+- Liver Disease Model: This model predicts the presence of liver disease in a person based on features like bilirubin levels, alkaline phosphatase, alamine aminotransferase, aspartate aminotransferase, and other liver function test results.
 
 ## Contributing
 
